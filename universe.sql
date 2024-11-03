@@ -225,52 +225,96 @@ ALTER TABLE ONLY public.star ALTER COLUMN star_id SET DEFAULT nextval('public.st
 -- Data for Name: galaxy; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.galaxy VALUES (1, 'Arknights', NULL, NULL, NULL);
+INSERT INTO public.galaxy VALUES (2, 'Vela Aegimius', NULL, NULL, NULL);
+INSERT INTO public.galaxy VALUES (3, 'Epsilon Librae', NULL, NULL, NULL);
+INSERT INTO public.galaxy VALUES (4, 'Mosaic Cloud', NULL, NULL, NULL);
+INSERT INTO public.galaxy VALUES (5, 'Horseshoe Galaxy', NULL, NULL, NULL);
+INSERT INTO public.galaxy VALUES (6, 'XA-49', NULL, NULL, NULL);
 
 
 --
 -- Data for Name: moon; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.moon VALUES (1, 'Naeryndam', NULL, NULL, NULL);
+INSERT INTO public.moon VALUES (2, 'Reyrora', NULL, NULL, NULL);
+INSERT INTO public.moon VALUES (3, 'Eldaerenth', NULL, NULL, NULL);
+INSERT INTO public.moon VALUES (4, 'Shacyne', NULL, NULL, NULL);
+INSERT INTO public.moon VALUES (5, 'Nesterin', NULL, NULL, NULL);
+INSERT INTO public.moon VALUES (6, 'Balro', NULL, NULL, NULL);
+INSERT INTO public.moon VALUES (7, 'Uldreyin', NULL, NULL, NULL);
+INSERT INTO public.moon VALUES (8, 'Yeslee', NULL, NULL, NULL);
+INSERT INTO public.moon VALUES (9, 'Alen', NULL, NULL, NULL);
+INSERT INTO public.moon VALUES (10, 'Lorafaren', NULL, NULL, NULL);
+INSERT INTO public.moon VALUES (11, 'Thalanil', NULL, NULL, NULL);
+INSERT INTO public.moon VALUES (12, 'Farzorwyn', NULL, NULL, NULL);
+INSERT INTO public.moon VALUES (13, 'Phaendar Yesceran', NULL, NULL, NULL);
+INSERT INTO public.moon VALUES (14, 'Hagmer', NULL, NULL, NULL);
+INSERT INTO public.moon VALUES (15, 'Torvyre', NULL, NULL, NULL);
+INSERT INTO public.moon VALUES (16, 'Almer', NULL, NULL, NULL);
+INSERT INTO public.moon VALUES (17, 'Eldrin', NULL, NULL, NULL);
+INSERT INTO public.moon VALUES (18, 'Luna', NULL, NULL, NULL);
+INSERT INTO public.moon VALUES (19, 'Phobos', NULL, NULL, NULL);
+INSERT INTO public.moon VALUES (20, 'Deimos', NULL, NULL, NULL);
 
 
 --
 -- Data for Name: planet; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.planet VALUES (1, 'Terra', NULL, NULL, NULL, NULL, 6);
+INSERT INTO public.planet VALUES (2, 'Madrunides', NULL, NULL, NULL, NULL, 6);
+INSERT INTO public.planet VALUES (3, 'Cumade', NULL, NULL, NULL, NULL, 5);
+INSERT INTO public.planet VALUES (4, 'Tillouitune', NULL, NULL, NULL, NULL, 5);
+INSERT INTO public.planet VALUES (5, 'Pagairus', NULL, NULL, NULL, NULL, 4);
+INSERT INTO public.planet VALUES (6, 'Vunkarvis', NULL, NULL, NULL, NULL, 4);
+INSERT INTO public.planet VALUES (7, 'Nidiri', NULL, NULL, NULL, NULL, 3);
+INSERT INTO public.planet VALUES (8, 'Toinus', NULL, NULL, NULL, NULL, 3);
+INSERT INTO public.planet VALUES (9, 'Koiliv', NULL, NULL, NULL, NULL, 2);
+INSERT INTO public.planet VALUES (10, 'Thotavis', NULL, NULL, NULL, NULL, 2);
+INSERT INTO public.planet VALUES (11, 'Gumuwei', NULL, NULL, NULL, NULL, 1);
+INSERT INTO public.planet VALUES (12, 'Ninda 447', NULL, NULL, NULL, NULL, 1);
 
 
 --
 -- Data for Name: star; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.star VALUES (1, 'Shep', NULL, 1, NULL);
+INSERT INTO public.star VALUES (2, 'Jun', NULL, 1, NULL);
+INSERT INTO public.star VALUES (3, 'Niviuk', NULL, 4, NULL);
+INSERT INTO public.star VALUES (4, 'Iyioflaps', NULL, 6, NULL);
+INSERT INTO public.star VALUES (5, 'Iniupsor', NULL, 6, NULL);
+INSERT INTO public.star VALUES (6, 'Usheuccels', NULL, 3, NULL);
 
 
 --
 -- Name: galaxy_galaxy_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.galaxy_galaxy_id_seq', 1, false);
+SELECT pg_catalog.setval('public.galaxy_galaxy_id_seq', 6, true);
 
 
 --
 -- Name: moon_moon_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.moon_moon_id_seq', 1, false);
+SELECT pg_catalog.setval('public.moon_moon_id_seq', 20, true);
 
 
 --
 -- Name: planet_planet_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.planet_planet_id_seq', 1, false);
+SELECT pg_catalog.setval('public.planet_planet_id_seq', 12, true);
 
 
 --
 -- Name: star_star_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.star_star_id_seq', 1, false);
+SELECT pg_catalog.setval('public.star_star_id_seq', 6, true);
 
 
 --
