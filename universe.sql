@@ -157,6 +157,41 @@ ALTER SEQUENCE public.planet_planet_id_seq OWNED BY public.planet.planet_id;
 
 
 --
+-- Name: spacestation; Type: TABLE; Schema: public; Owner: freecodecamp
+--
+
+CREATE TABLE public.spacestation (
+    spacestation_id integer NOT NULL,
+    name character varying(32) NOT NULL,
+    population integer
+);
+
+
+ALTER TABLE public.spacestation OWNER TO freecodecamp;
+
+--
+-- Name: spacestation_spacestation_id_seq; Type: SEQUENCE; Schema: public; Owner: freecodecamp
+--
+
+CREATE SEQUENCE public.spacestation_spacestation_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.spacestation_spacestation_id_seq OWNER TO freecodecamp;
+
+--
+-- Name: spacestation_spacestation_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: freecodecamp
+--
+
+ALTER SEQUENCE public.spacestation_spacestation_id_seq OWNED BY public.spacestation.spacestation_id;
+
+
+--
 -- Name: star; Type: TABLE; Schema: public; Owner: freecodecamp
 --
 
@@ -212,6 +247,13 @@ ALTER TABLE ONLY public.moon ALTER COLUMN moon_id SET DEFAULT nextval('public.mo
 --
 
 ALTER TABLE ONLY public.planet ALTER COLUMN planet_id SET DEFAULT nextval('public.planet_planet_id_seq'::regclass);
+
+
+--
+-- Name: spacestation spacestation_id; Type: DEFAULT; Schema: public; Owner: freecodecamp
+--
+
+ALTER TABLE ONLY public.spacestation ALTER COLUMN spacestation_id SET DEFAULT nextval('public.spacestation_spacestation_id_seq'::regclass);
 
 
 --
@@ -278,6 +320,15 @@ INSERT INTO public.planet VALUES (12, 'Ninda 447', NULL, NULL, NULL, NULL, 1);
 
 
 --
+-- Data for Name: spacestation; Type: TABLE DATA; Schema: public; Owner: freecodecamp
+--
+
+INSERT INTO public.spacestation VALUES (1, 'Citadel', NULL);
+INSERT INTO public.spacestation VALUES (2, 'Elysium', NULL);
+INSERT INTO public.spacestation VALUES (3, 'Gaul', NULL);
+
+
+--
 -- Data for Name: star; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
@@ -308,6 +359,13 @@ SELECT pg_catalog.setval('public.moon_moon_id_seq', 20, true);
 --
 
 SELECT pg_catalog.setval('public.planet_planet_id_seq', 12, true);
+
+
+--
+-- Name: spacestation_spacestation_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
+--
+
+SELECT pg_catalog.setval('public.spacestation_spacestation_id_seq', 3, true);
 
 
 --
@@ -363,6 +421,22 @@ ALTER TABLE ONLY public.planet
 
 ALTER TABLE ONLY public.planet
     ADD CONSTRAINT planet_pkey PRIMARY KEY (planet_id);
+
+
+--
+-- Name: spacestation spacestation_name_key; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+--
+
+ALTER TABLE ONLY public.spacestation
+    ADD CONSTRAINT spacestation_name_key UNIQUE (name);
+
+
+--
+-- Name: spacestation spacestation_pkey; Type: CONSTRAINT; Schema: public; Owner: freecodecamp
+--
+
+ALTER TABLE ONLY public.spacestation
+    ADD CONSTRAINT spacestation_pkey PRIMARY KEY (spacestation_id);
 
 
 --
