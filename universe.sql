@@ -237,26 +237,26 @@ INSERT INTO public.galaxy VALUES (6, 'XA-49', NULL, NULL, NULL);
 -- Data for Name: moon; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.moon VALUES (1, 'Naeryndam', NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (2, 'Reyrora', NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (3, 'Eldaerenth', NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (4, 'Shacyne', NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (5, 'Nesterin', NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (6, 'Balro', NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (7, 'Uldreyin', NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (8, 'Yeslee', NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (9, 'Alen', NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (10, 'Lorafaren', NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (11, 'Thalanil', NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (12, 'Farzorwyn', NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (13, 'Phaendar Yesceran', NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (14, 'Hagmer', NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (15, 'Torvyre', NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (16, 'Almer', NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (17, 'Eldrin', NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (18, 'Luna', NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (19, 'Phobos', NULL, NULL, NULL);
-INSERT INTO public.moon VALUES (20, 'Deimos', NULL, NULL, NULL);
+INSERT INTO public.moon VALUES (1, 'Naeryndam', NULL, 1, NULL);
+INSERT INTO public.moon VALUES (2, 'Reyrora', NULL, 1, NULL);
+INSERT INTO public.moon VALUES (3, 'Eldaerenth', NULL, 1, NULL);
+INSERT INTO public.moon VALUES (4, 'Shacyne', NULL, 3, NULL);
+INSERT INTO public.moon VALUES (5, 'Nesterin', NULL, 3, NULL);
+INSERT INTO public.moon VALUES (6, 'Balro', NULL, 3, NULL);
+INSERT INTO public.moon VALUES (7, 'Uldreyin', NULL, 5, NULL);
+INSERT INTO public.moon VALUES (8, 'Yeslee', NULL, 5, NULL);
+INSERT INTO public.moon VALUES (9, 'Alen', NULL, 5, NULL);
+INSERT INTO public.moon VALUES (10, 'Lorafaren', NULL, 7, NULL);
+INSERT INTO public.moon VALUES (11, 'Thalanil', NULL, 7, NULL);
+INSERT INTO public.moon VALUES (12, 'Farzorwyn', NULL, 7, NULL);
+INSERT INTO public.moon VALUES (13, 'Phaendar Yesceran', NULL, 9, NULL);
+INSERT INTO public.moon VALUES (14, 'Hagmer', NULL, 9, NULL);
+INSERT INTO public.moon VALUES (15, 'Torvyre', NULL, 9, NULL);
+INSERT INTO public.moon VALUES (16, 'Almer', NULL, 11, NULL);
+INSERT INTO public.moon VALUES (17, 'Eldrin', NULL, 11, NULL);
+INSERT INTO public.moon VALUES (18, 'Luna', NULL, 11, NULL);
+INSERT INTO public.moon VALUES (19, 'Phobos', NULL, 12, NULL);
+INSERT INTO public.moon VALUES (20, 'Deimos', NULL, 12, NULL);
 
 
 --
